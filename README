@@ -1,0 +1,32 @@
+genHRC installation manual :
+	
+	Place the genHRC.jar file in the same directory as the source videos.
+
+
+genHRC utilisation manual:
+
+	Type this command followed by one of the possible instructions in a terminal to run genHRC :
+		java -jar genHRC.jar <instruction>
+	
+	Below are the different possible instructions for the genHRC program:
+
+	create <src> <HRC>
+
+		Generates the bash script corresponding to the given HRC and src
+
+	putHash <src> <HRC> <hash> 
+
+		Adds a line for the given parameters in the database.
+		This is automatically done by the generated bash file.
+	
+	getHash <src> <HRC> 
+		
+		Returns the hash value corresponding to the given parameters.
+
+	getSrcHRC <hash> 
+		
+		Returns the pairs of <src> <HRC> corresponding to the given hash value.
+
+	deleteSrcHRC <src> <HRC>
+
+		Deletes the line from the database linking the given pair to a hash value.
